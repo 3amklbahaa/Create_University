@@ -1,0 +1,13 @@
+Suppose the Lebanese University wants to organize all the offers of specializations at the university. There is a maximum of 50 Majors (specializations). Each Major has a name, the name of the department to which the Major belongs, the number of students in each Major, the number of credits required to complete the Major, the cost per credit, and the last name of the Major's supervisor.
+
+Example input: "Biomedical" "Engineering" 30 120 35.0 "Bro"
+"Math" "Science" 25 130 28.5 "Smith"
+
+Define a structure named Major.
+Define a structure named University composed of the university's name, the university's address, and an array of Majors with a maximum size of 50. Don't forget to include a field variable in the structure to track the actual number of Majors in the university.
+Write a function that creates and returns a Major with the information entered by the user.
+Write a function that creates and returns a University. The information is entered by the user. The returned university does not contain any Majors when created.
+Write the AddMajor function that takes a reference to a variable of type University and a variable of type Major as input and inserts the Major into the array of Majors in the university if there is available space.
+Write the "University UpdateMajor(char nameMajor[], University U, float newCost)" function that updates the cost per credit of a Major specified by nameMajor and returns the updated University.
+Write the SearchMajor function that takes a variable of type Major and a variable of type University as input and searches whether the university contains a Major with the same name as the one passed as a parameter. If a Major is found, write the total cost of the Major.
+Write a main program in which you use the functions above.
